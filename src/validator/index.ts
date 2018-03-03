@@ -70,7 +70,12 @@ const responseList = {
         description: 'Successful response',
         type: 'object',
         properties: {
-            result: { type: 'object' },
+            result: {
+                "type": "object",
+                "properties": {
+                    "example": { "type": "string" }
+                }
+            },
         },
     },
 };
