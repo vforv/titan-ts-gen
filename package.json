@@ -1,0 +1,36 @@
+{
+  "name": "new-sw",
+  "version": "1.0.0",
+  "description": "This service use just for testing it will create ping date route which return date.",
+  "main": "service.ts",
+  "scripts": {
+    "test": "npm test",
+    "dev": "nodemon",
+    "ts-node": "npm run lint && ts-node ./src/service.ts",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "doc": "",
+    "build": "tsc"
+  },
+  "author": "Vladimir Djukic",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^1.0.0-rc.2",
+    "fastify-formbody": "^1.2.5",
+    "joi": "^13.1.2",
+    "joi-to-swagger": "^1.2.0",
+    "pino": "^4.13.0",
+    "reflect-metadata": "^0.1.12",
+    "typedi": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/joi": "^13.0.5",
+    "@types/node": "^9.4.6",
+    "@types/pino": "^4.7.1",
+    "bootprint": "^1.0.2",
+    "bootprint-openapi": "^1.1.0",
+    "fastify-swagger": "^0.5.0",
+    "nodemon": "^1.17.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  }
+}
